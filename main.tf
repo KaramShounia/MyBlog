@@ -38,3 +38,29 @@ resource "aws_subnet" "public_2" {
     Name = "public-subnet-2"
   }
 }
+
+resource "aws_subnet" "private_1" {
+  vpc_id     = aws_vpc.MyBlog.id
+  cidr_block = "10.0.3.0/24"
+  availability_zone = "${var.region}a"
+  tags = {
+    Name = "private-subnet-1"
+  }
+}
+
+resource "aws_subnet" "private_2" {
+  vpc_id     = aws_vpc.MyBlog.id
+  cidr_block = "10.0.4.0/24"
+  availability_zone = "${var.region}b"
+  tags = {
+    Name = "private-subnet-2"
+  }
+}
+
+resource "aws_internet_gateway" "gw" {
+  vpc_id = aws_vpc.MyBlog.id
+
+  tags = {
+    Name = "MyBlog-gw"
+  }
+}
