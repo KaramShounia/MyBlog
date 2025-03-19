@@ -1,6 +1,6 @@
 # MyBlog Project 
 
-I wanted to create this blog project to showcase my knowledge and expertise in creating and managing infrastructure on AWS using Terraform. I wanted to show my knowledge in AWS services as well as IaC. 
+I wanted to create this blog project to showcase my knowledge and expertise in creating and managing infrastructure on AWS using Terraform. I wanted to show my knowledge in AWS services as well as IaC. I was able to create a sample blog by using EC2 instances, RDS, S3, and VPC components. I followed security best practices while setting up my VPC with keeping important components behind private subnets. I also made sure my solution was highly reliable and available.  
 
 ### Setting up VPC, Subnets, Internet Gateway, and Route Tables
 
